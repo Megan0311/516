@@ -1,0 +1,51 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+    <div class="row img-responsive" style="background-image:url('../../static/app/photo/b3.png');height:680px;width:90%">
+       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 "style="float:left">
+       <h2 class="center" style="font-family:Arial; font-weight:700">設定布林通道</h2>
+         <form>
+            <div class="input-group  mb-3  ">
+              <div class="input-group-prepend">   
+                <fieldset>
+                    <legend style="font-family:Arial; font-weight:700">選取股票資料</legend>
+                     <div class='form-horizontal'>
+                      <input class=" form-inline" style='padding-bottom:10px;font-size:16pt' type="radio" name="choose_type" value="all" id="all" checked><h4>特選股票組合</h4><br/><br/>   
+                     </div> 
+                     <div class="dropdown">
+                         <input  style=' padding-bottom:10px;font-size:16pt' type="radio" name="choose_type" value="one" id="one"><br/><br/>
+                         <button class="btn-warning dropdown-toggle" data-toggle="dropdown"style=' padding-top:2px;padding-bottom:2px'>海選1支獨秀股票</button>
+                         <select class="dropdown-menu"   id="stock_id" size="4" style="width:100px;font-size:13pt">
+                         <option value='2408'>南亞科</option>
+                         <option value='2421'>建準</option>
+                         <option value='2330'>台積電</option>
+                         <option value='2317'>鴻海</option>
+                         <option value='6165'>捷泰</option>
+                         <option value='2313'>華通</option>
+                         <option value='3661'>世芯-KY</option>
+                         <option value='2340'>光磊</option>
+                         <option value='1455'>集盛</option>
+                         <option value='1409'>新纖</option>
+                         <option value='2481'>強茂</option>
+                         <option value='3008'>大立光</option>
+                         <option value='2327'>國巨</option>
+                         <option value='4906'>正文</option>
+                         <option value='2417'>圓剛</option>
+                         <option value='1536'>和大</option>
+                         <option value='1454'>台富</option>
+                         <option value='2882'>國泰金</option>
+                         <option value='2891'>中信金</option>
+                         <option value='4943'>康控-KY</option>
+                         <option value='2515'>中工</option>
+                         </select><br><br><br><br>
+                     </div> 
+                        <input type="button" id="btn_search" class="btn btn-success"style='margin-top:20px'  value="KPI顯示">
+                 </fieldset>
+               </div>
+               </div>    
+            </form>       
+         </div>              
+         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 "style="float:right; padding-bottom:20px">
+         <table class="center" active  width="95%" style="outline-color:aquamarine;border-bottom-width:1px;border-spacing:0.5px;font-size:12pt" id="result2" ></table><br>
+         </div>              
+     </div>
+{% endblock %}

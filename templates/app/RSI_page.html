@@ -1,0 +1,86 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+<div class="row img-responsive" style="background-image:url('../../static/app/photo/b3.png');height:680px;width:90%">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 "style="float:left">
+<h2 class="center" style="font-family:Arial; font-weight:700">設定RSI參數</h2>
+<form>
+<div class="input-group  mb-3  form-horizontal">
+<div class="input-group-prepend">
+<label class="control-label" for="RSI_period">RSI間隔:</label><br>
+</div>
+<input class="form-control" type="number" id="RSI_period" value='15'> <br>
+</div>
+</form>
+<form>
+<div class="input-group  mb-3  form-horizontal">
+<div class="input-group-prepend">
+<label class="control-label" for="RSI_buy" >RSI買入值:</label><br>
+</div>
+<input class="form-control" type="number" id="RSI_buy" value= '20'> <br>
+</div>
+</form>
+<form>
+<div class="input-group  mb-3  form-horizontal">
+<div class="input-group-prepend">
+<label class="control-label" for="RSI_sell" >RSI賣出值:</label><br>
+</div>
+<input class="form-control" type="number"  id="RSI_sell" value='60'> <br>
+</div>
+ <fieldset>
+      <legend style="font-family:Arial; font-weight:700">選取股票資料</legend>
+       <div class='form-horizontal'>
+        <input class=" form-inline" style='padding-bottom:10px;font-size:16pt' type="radio" name="choose_type" value="all" id="all" checked><h4>特選股票組合</h4><br/><br/>   
+       </div> 
+       <div class="dropdown">
+           <input  style=' padding-bottom:10px;font-size:16pt' type="radio" name="choose_type" value="one" id="one"><br/><br/>
+           <button class="btn-warning dropdown-toggle" data-toggle="dropdown"style=' padding-top:2px;padding-bottom:2px'>海選1支獨秀股票</button>
+           <select class="dropdown-menu"   id="stock_id1" size="4" style="width:100px;font-size:13pt">
+           <option value='2408'>南亞科</option>
+           <option value='2421'>建準</option>
+           <option value='2330'>台積電</option>
+           <option value='2317'>鴻海</option>
+           <option value='6165'>捷泰</option>
+           <option value='2313'>華通</option>
+           <option value='3661'>世芯-KY</option>
+           <option value='2340'>光磊</option>
+           <option value='1455'>集盛</option>
+           <option value='1409'>新纖</option>
+           <option value='2481'>強茂</option>
+           <option value='3008'>大立光</option>
+           <option value='2327'>國巨</option>
+           <option value='4906'>正文</option>
+           <option value='2417'>圓剛</option>
+           <option value='1536'>和大</option>
+           <option value='1454'>台富</option>
+           <option value='2882'>國泰金</option>
+           <option value='2891'>中信金</option>
+           <option value='4943'>康控-KY</option>
+           <option value='2515'>中工</option>
+           </select><br><br><br><br>
+       </div> 
+    </fieldset>
+</form>
+ <input type="button" id="btn_work" class="btn btn-success"  value="回測"> 
+ <input type="button" id="KPI_show" class="btn btn-success"  value="KPI顯示"> 
+<br />
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 "style="float:right">
+ <table class="center " width="100%" style="outline-color:aquamarine;border-bottom-width:1px;border-spacing:0.5px" id="result" ></table><br>
+ <table class="center " id="result1" active ></table>
+ </div>
+ </div>
+
+{% endblock %}
+ {#<table class="table-response  center" border="0" style="margin-left:30%">
+             <tr>
+                <td><fieldset>
+                    <legend>設定測試日期</legend>
+						<span>RSI間隔:</span><input type="number" id="RSI_period" value= 6><br><br>
+						<span>RSI買入值:</span><input type="number" id="RSI_buy" value= 20><br><br>
+						<span>RSI賣出值:</span><input type="number" id="RSI_sell" value= 80><br><br>
+                    <input type="button" id="btn_work" class="btn btn-success" value="回測"> 
+                    <input type="button" id="KPI_show" class="btn btn-success" value="KPI顯示"> 
+                </fieldset></td>
+             </tr>
+        </table>
+        <span id="result" ></span><br><br>#}

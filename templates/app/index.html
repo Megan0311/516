@@ -1,0 +1,34 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron"style="background-image: url('../../static/app/photo/b5.jpg');">
+    <h1 class='radial-gradient'style="font-family:Arial;font-weight:bold;text-align:center;color:gold;text-shadow:2px 1px 1px 0;">STOCK STRATEGY</h1>
+    <p class="lead right"style="text-align:right;color:burlywood;text-shadow:2px 1px 1px 0;font-size:16pt;font-weight:700">From Megan's Challenge</p>
+   
+</div>
+
+<div class="row" style="background-image:url('../../static/app/photo/tree.png' );height:400px;padding-top:45px">
+    <div class="col-md-4"><a href="/BBands/">
+        <h2>BBands</h2>
+        <img class="img-responseive"style="width:90%;height:250px"src="../../static/app/photo/BBands.png"  />
+        </a>
+        <p><a class="btn btn-primary btn-large" href="/bo/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4"> <a href="/BBands/">
+        <h2>SMAWMA</h2>
+       <img class="img-responseive"style="width:90%;height:250px" src="../../static/app/photo/Volume-Weighted-Moving-Average-VWMA-Weakness.png"  />
+       </a>
+     <p><a href="/sm/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div> 
+  
+    <div class="col-md-4"><a href="/RSI_page/">
+      <h2>RSI</h2>
+     <aside style="font-size:13pt"></aside>
+     <img class="img-responseive"style="width:90%;height:250px" src="../../static/app/photo/RSIwiki.jpg" />
+      </a>
+     <p><a href="/rsi/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
