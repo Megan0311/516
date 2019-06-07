@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>Django516</Name>
+    <RootNamespace>Django516</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ed872751-08a2-44eb-bf6a-66124f52c9ab</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>Django516.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\merged_data\get_raw_data.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="Django516\KPI.py" />
+    <Compile Include="Django516\BBands_py.py" />
+    <Compile Include="Django516\main.py" />
+    <Compile Include="Django516\merge_data.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="Django516\__init__.py" />
+    <Compile Include="Django516\settings.py" />
+    <Compile Include="Django516\urls.py" />
+    <Compile Include="Django516\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\contest_data\" />
+    <Folder Include="app\merged_data\" />
+    <Folder Include="app\merged_data\merged_data_5min\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\photo\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="Django516\" />
+    <Folder Include="static\" />
+    <Folder Include="static\app\" />
+    <Folder Include="static\app\photo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\contest_data\20180702_Stock.csv" />
+    <Content Include="app\contest_data\20180703_Stock.csv" />
+    <Content Include="app\contest_data\20180704_Stock.csv" />
+    <Content Include="app\contest_data\20180705_Stock.csv" />
+    <Content Include="app\contest_data\20180706_Stock.csv" />
+    <Content Include="app\contest_data\20180709_Stock.csv" />
+    <Content Include="app\contest_data\20180710_Stock.csv" />
+    <Content Include="app\contest_data\20180711_Stock.csv" />
+    <Content Include="app\contest_data\20180712_Stock.csv" />
+    <Content Include="app\contest_data\20180713_Stock.csv" />
+    <Content Include="app\contest_data\20180716_Stock.csv" />
+    <Content Include="app\contest_data\20180717_Stock.csv" />
+    <Content Include="app\contest_data\20180718_Stock.csv" />
+    <Content Include="app\contest_data\20180719_Stock.csv" />
+    <Content Include="app\contest_data\20180720_Stock.csv" />
+    <Content Include="app\contest_data\20180723_Stock.csv" />
+    <Content Include="app\contest_data\20180724_Stock.csv" />
+    <Content Include="app\contest_data\20180725_Stock.csv" />
+    <Content Include="app\contest_data\20180726_Stock.csv" />
+    <Content Include="app\contest_data\20180727_Stock.csv" />
+    <Content Include="app\contest_data\20180730_Stock.csv" />
+    <Content Include="app\contest_data\20180731_Stock.csv" />
+    <Content Include="app\contest_data\20180801_Stock.csv" />
+    <Content Include="app\contest_data\20180802_Stock.csv" />
+    <Content Include="app\contest_data\20180803_Stock.csv" />
+    <Content Include="app\contest_data\20180806_Stock.csv" />
+    <Content Include="app\contest_data\20180807_Stock.csv" />
+    <Content Include="app\contest_data\20180808_Stock.csv" />
+    <Content Include="app\contest_data\20180809_Stock.csv" />
+    <Content Include="app\contest_data\20180810_Stock.csv" />
+    <Content Include="app\contest_data\20180813_Stock.csv" />
+    <Content Include="app\contest_data\20180814_Stock.csv" />
+    <Content Include="app\contest_data\20180815_Stock.csv" />
+    <Content Include="app\contest_data\20180816_Stock.csv" />
+    <Content Include="app\contest_data\20180817_Stock.csv" />
+    <Content Include="app\contest_data\20180820_Stock.csv" />
+    <Content Include="app\contest_data\20180821_Stock.csv" />
+    <Content Include="app\contest_data\20180822_Stock.csv" />
+    <Content Include="app\contest_data\20180823_Stock.csv" />
+    <Content Include="app\contest_data\20180824_Stock.csv" />
+    <Content Include="app\contest_data\20180827_Stock.csv" />
+    <Content Include="app\contest_data\20180828_Stock.csv" />
+    <Content Include="app\contest_data\20180829_Stock.csv" />
+    <Content Include="app\contest_data\20180830_Stock.csv" />
+    <Content Include="app\contest_data\20180831_Stock.csv" />
+    <Content Include="app\contest_data\20180903_Stock.csv" />
+    <Content Include="app\contest_data\20180904_Stock.csv" />
+    <Content Include="app\contest_data\20180905_Stock.csv" />
+    <Content Include="app\contest_data\20180906_Stock.csv" />
+    <Content Include="app\contest_data\20180907_Stock.csv" />
+    <Content Include="app\contest_data\20180910_Stock.csv" />
+    <Content Include="app\contest_data\20180911_Stock.csv" />
+    <Content Include="app\contest_data\20180912_Stock.csv" />
+    <Content Include="app\contest_data\20180913_Stock.csv" />
+    <Content Include="app\contest_data\20180914_Stock.csv" />
+    <Content Include="app\contest_data\20180917_Stock.csv" />
+    <Content Include="app\contest_data\20180918_Stock.csv" />
+    <Content Include="app\contest_data\20180919_Stock.csv" />
+    <Content Include="app\contest_data\20180920_Stock.csv" />
+    <Content Include="app\contest_data\20180921_Stock.csv" />
+    <Content Include="app\contest_data\20180925_Stock.csv" />
+    <Content Include="app\contest_data\20180926_Stock.csv" />
+    <Content Include="app\contest_data\20180927_Stock.csv" />
+    <Content Include="app\contest_data\20180928_Stock.csv" />
+    <Content Include="app\contest_data\20181001_Stock.csv" />
+    <Content Include="app\contest_data\20181002_Stock.csv" />
+    <Content Include="app\contest_data\20181003_Stock.csv" />
+    <Content Include="app\contest_data\20181004_Stock.csv" />
+    <Content Include="app\contest_data\20181005_Stock.csv" />
+    <Content Include="app\contest_data\20181008_Stock.csv" />
+    <Content Include="app\contest_data\20181009_Stock.csv" />
+    <Content Include="app\contest_data\20181011_Stock.csv" />
+    <Content Include="app\contest_data\20181012_Stock.csv" />
+    <Content Include="app\contest_data\20181015_Stock.csv" />
+    <Content Include="app\contest_data\20181016_Stock.csv" />
+    <Content Include="app\contest_data\20181017_Stock.csv" />
+    <Content Include="app\contest_data\20181018_Stock.csv" />
+    <Content Include="app\contest_data\20181019_Stock.csv" />
+    <Content Include="app\contest_data\20181022_Stock.csv" />
+    <Content Include="app\contest_data\20181023_Stock.csv" />
+    <Content Include="app\contest_data\20181024_Stock.csv" />
+    <Content Include="app\contest_data\20181025_Stock.csv" />
+    <Content Include="app\contest_data\20181026_Stock.csv" />
+    <Content Include="app\contest_data\20181029_Stock.csv" />
+    <Content Include="app\contest_data\20181030_Stock.csv" />
+    <Content Include="app\contest_data\20181031_Stock.csv" />
+    <Content Include="app\contest_data\20181101_Stock.csv" />
+    <Content Include="app\contest_data\20181102_Stock.csv" />
+    <Content Include="app\contest_data\20181105_Stock.csv" />
+    <Content Include="app\contest_data\20181106_Stock.csv" />
+    <Content Include="app\contest_data\20181107_Stock.csv" />
+    <Content Include="app\contest_data\20181108_Stock.csv" />
+    <Content Include="app\contest_data\20181109_Stock.csv" />
+    <Content Include="app\contest_data\20181112_Stock.csv" />
+    <Content Include="app\contest_data\20181113_Stock.csv" />
+    <Content Include="app\contest_data\20181114_Stock.csv" />
+    <Content Include="app\contest_data\20181115_Stock.csv" />
+    <Content Include="app\contest_data\20181116_Stock.csv" />
+    <Content Include="app\contest_data\20181119_Stock.csv" />
+    <Content Include="app\contest_data\20181120_Stock.csv" />
+    <Content Include="app\contest_data\20181121_Stock.csv" />
+    <Content Include="app\contest_data\20181122_Stock.csv" />
+    <Content Include="app\contest_data\20181123_Stock.csv" />
+    <Content Include="app\contest_data\20181126_Stock.csv" />
+    <Content Include="app\contest_data\20181127_Stock.csv" />
+    <Content Include="app\contest_data\20181128_Stock.csv" />
+    <Content Include="app\contest_data\20181129_Stock.csv" />
+    <Content Include="app\contest_data\20181130_Stock.csv" />
+    <Content Include="app\contest_data\20181203_Stock.csv" />
+    <Content Include="app\contest_data\20181204_Stock.csv" />
+    <Content Include="app\contest_data\20181205_Stock.csv" />
+    <Content Include="app\contest_data\20181206_Stock.csv" />
+    <Content Include="app\contest_data\20181207_Stock.csv" />
+    <Content Include="app\contest_data\20181210_Stock.csv" />
+    <Content Include="app\contest_data\20181211_Stock.csv" />
+    <Content Include="app\contest_data\20181212_Stock.csv" />
+    <Content Include="app\contest_data\20181213_Stock.csv" />
+    <Content Include="app\contest_data\20181214_Stock.csv" />
+    <Content Include="app\contest_data\20181217_Stock.csv" />
+    <Content Include="app\contest_data\20181218_Stock.csv" />
+    <Content Include="app\contest_data\20181219_Stock.csv" />
+    <Content Include="app\contest_data\20181220_Stock.csv" />
+    <Content Include="app\contest_data\20181221_Stock.csv" />
+    <Content Include="app\contest_data\20181222_Stock.csv" />
+    <Content Include="app\contest_data\20181224_Stock.csv" />
+    <Content Include="app\contest_data\20181225_Stock.csv" />
+    <Content Include="app\contest_data\20181226_Stock.csv" />
+    <Content Include="app\contest_data\20181227_Stock.csv" />
+    <Content Include="app\contest_data\20181228_Stock.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180702_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180703_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180704_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180705_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180706_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180709_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180710_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180711_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180712_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180713_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180716_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180717_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180718_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180719_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180720_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180723_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180724_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180725_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180726_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180727_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180730_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180731_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180801_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180802_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180803_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180806_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180807_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180808_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180809_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180810_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180813_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180814_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180815_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180816_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180817_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180820_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180821_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180822_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180823_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180824_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180827_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180828_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180829_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180830_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180831_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180903_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180904_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180905_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180906_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180907_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180910_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180911_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180912_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180913_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180914_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180917_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180918_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180919_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180920_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180921_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180925_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180926_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180927_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20180928_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181001_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181002_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181003_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181004_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181005_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181008_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181009_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181011_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181012_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181015_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181016_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181017_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181018_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181019_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181022_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181023_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181024_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181025_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181026_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181029_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181030_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181031_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181101_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181102_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181105_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181106_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181107_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181108_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181109_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181112_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181113_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181114_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181115_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181116_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181119_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181120_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181121_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181122_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181123_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181126_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181127_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181128_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181129_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181130_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181203_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181204_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181205_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181206_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181207_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181210_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181211_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181212_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181213_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181214_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181217_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181218_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181219_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181220_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181221_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181222_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181224_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181225_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181226_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181227_merged_data.csv" />
+    <Content Include="app\merged_data\merged_data_5min\20181228_merged_data.csv" />
+    <Content Include="app\static\app\content\RSI_page.css" />
+    <Content Include="app\static\app\photo\b2.png" />
+    <Content Include="app\static\app\photo\b3.png" />
+    <Content Include="app\static\app\photo\b4.png" />
+    <Content Include="app\static\app\photo\b5.jpg" />
+    <Content Include="app\static\app\photo\ba1.png" />
+    <Content Include="app\static\app\photo\bol2.png" />
+    <Content Include="app\static\app\photo\RSI2.png" />
+    <Content Include="app\static\app\photo\SM2.png" />
+    <Content Include="app\static\app\photo\tree.png" />
+    <Content Include="app\static\app\scripts\boolin.js" />
+    <Content Include="app\static\app\scripts\RSI_page.js" />
+    <Content Include="app\templates\app\BBands.html" />
+    <Content Include="app\templates\app\rsi.html" />
+    <Content Include="app\templates\app\sm.html" />
+    <Content Include="app\templates\app\RSI_page.html" />
+    <Content Include="app\templates\app\bo.html" />
+    <Content Include="BBands_record.csv" />
+    <Content Include="KPI.csv" />
+    <Content Include="FinalResult.xlsx" />
+    <Content Include="result_BBand.xlsx" />
+    <Content Include="result_SMA.xlsx" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="app\static\app\photo\RSIwiki.jpg" />
+    <Content Include="app\static\app\photo\bbands-1.jpg" />
+    <Content Include="app\static\app\photo\BBands.png" />
+    <Content Include="app\static\app\photo\Volume-Weighted-Moving-Average-VWMA-Weakness.png" />
+    <Content Include="app\static\app\photo\WMA.png" />
+    <Content Include="SAM_trade_record.csv" />
+    <Content Include="trade_record.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
