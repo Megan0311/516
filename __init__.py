@@ -1,3 +1,3 @@
 """
-Package for the application.
+Package for Django516.
 """
