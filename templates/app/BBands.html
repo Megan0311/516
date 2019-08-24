@@ -8,12 +8,19 @@
               <div class="input-group-prepend">   
                 <fieldset>
                     <legend style="font-family:Arial; font-weight:700">選取股票資料</legend>
+                     <div class='form-horizontal form-inline'>
+                      <input class=" form-inline" style='padding-bottom:5px;font-size:14pt' type="radio" name="choose_type1" value="A" id="1" checked><h5>2018_7月至2018_12月30分資料</h5>
+                      <input class=" form-inline" style='padding-bottom:5px;font-size:14pt' type="radio" name="choose_type1" value="B" id="2" checked><h5>2018_1月至2018_3月5分資料</h5>  
+                      <input class=" form-inline" style='padding-bottom:5px;font-size:14pt' type="radio" name="choose_type1" value="C" id="3" checked><h5>2019_1月至2019_3月5分資料</h5>
+                      <input class=" form-inline" style='padding-bottom:5px;font-size:14pt' type="radio" name="choose_type1" value="D" id="4" checked><h5>2018_1月至2018_3月30分資料</h5>
+                      <input class=" form-inline" style='padding-bottom:5px;font-size:14pt' type="radio" name="choose_type1" value="E" id="5" checked><h5>2019_1月至2019_3月30分資料</h5>  
+                     </div> 
                      <div class='form-horizontal'>
-                      <input class=" form-inline" style='padding-bottom:10px;font-size:16pt' type="radio" name="choose_type" value="all" id="all" checked><h4>特選股票組合</h4><br/><br/>   
+                      <input class=" form-inline" style='padding-bottom:5px;font-size:16pt' type="radio" name="choose_type" value="all" id="all" checked><h4>特選股票組合</h4>
                      </div> 
                      <div class="dropdown">
-                         <input  style=' padding-bottom:10px;font-size:16pt' type="radio" name="choose_type" value="one" id="one"><br/><br/>
-                         <button class="btn-warning dropdown-toggle" data-toggle="dropdown"style=' padding-top:2px;padding-bottom:2px'>海選1支獨秀股票</button>
+                         <input  style=' padding-bottom:2px;font-size:16pt' type="radio" name="choose_type" value="one" id="one"><br/><br/>
+                         <button class="btn-warning dropdown-toggle" data-toggle="dropdown"style=' padding-top:1px;padding-bottom:2px'>海選1支獨秀股票</button>
                          <select class="dropdown-menu"   id="stock_id" size="4" style="width:100px;font-size:13pt">
                          <option value='2408'>南亞科</option>
                          <option value='2421'>建準</option>
@@ -36,9 +43,10 @@
                          <option value='2891'>中信金</option>
                          <option value='4943'>康控-KY</option>
                          <option value='2515'>中工</option>
-                         </select><br><br><br><br>
+                         <option value='1101'>台泥</option>
+                         </select><br>
                      </div> 
-                        <input type="button" id="btn_search" class="btn btn-success"style='margin-top:20px'  value="KPI顯示">
+                        <input type="button" id="btn_search" class="btn btn-success"style='margin-top:10px'  value="KPI顯示">
                  </fieldset>
                </div>
                </div>    
